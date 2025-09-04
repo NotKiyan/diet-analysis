@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Diet Analysis</title>
+</head>
+<body>
+    <h2 style="text-align: center ;">Daily Analysis</h2>
+    <hr>
+
+    <h3>Personal Information
+
+    </h3>
+
+ <form action="">
+       <div>
+        <label for="username">Name:</label>
+        <input type="text" name="username" id="username" required>
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" required>
+        <label for="dob">Date of Birth:</label>
+        <input type="datetime" name="date" id="dob" required> 
+
+
+    </div>
+    <br>
+    <div>
+        <label for="height">Height:</label>
+        <input type="text" name="height" id="height" required>
+        <label for="weight">Weight: </label>
+        <input type="text" name="weight" id="weight" required>
+    </div>
+    <br>
+
+    <div>
+        <label for="phone"></label>Phone number:
+        <input type="text" name="phone" id="phone">
+
+        <label for="mail">Email </label>
+        <input type="email" name="mail" id="mail">
+    </div>
+
+   <div>
+    <p>Are you a Vegetarian ?</p>
+    <label for="veg"></label>
+    <input type="radio" name="diet" id="veg" value="vegetarian" >Vegetarian
+    
+    <label for="nonveg"></label>
+    <input type="radio" name="diet" id="nonveg" value="non-vegetarian">Non-Vegetarian
+    </div>
+    <div>
+        <label for="allergies">Food Allergies or intolerance:</label>
+        <textarea name="allergies" id="allergies" cols="30" rows="1"></textarea>
+        <br>
+        <label for="avoidedfood">What foods do you avoid:</label>
+        <textarea name="avoidedfood" id="avoidedfood" cols="30" rows="1"></textarea>
+        <br>
+        <label for="alcoholism">Do you drink alcohol ?</label>
+        <input type="radio" name="Do you drink alcohol? " id="yesalcohol">Yes
+        <input type="radio" name="Do you drink alcohol? " id="noalcohol">No
+
+        <br>
+        <label for="exercise">Do you currently exercise? </label>
+        <input type="radio" name="exercise" id="yes">yes
+        <input type="radio" name="exercise" id="no">no
+        <br>
+        <label for="exerfreq">If yes, then how many times a week ?</label>
+        <input type="text" name="exerfreq">
+    </div>
+    <div> <br>
+         <label><b>Are you on a special diet?</b><br>
+    (Gluten-free, vegan, vegetarian, low cholesterol, kosher, etc.)
+    <br>
+    <input type="text" name="special_diet" size="60">
+  </label>
+  <br><br>
+
+  <label>Food Allergies or intolerance:<br>
+    <input type="text" name="food_allergies" size="60">
+  </label>
+  <br><br>
+  
+  <label>What foods do you avoid:<br>
+    <input type="text" name="foods_avoid" size="60">
+  </label>
+  <br><br>
+  
+  <label>Why do you want to see a Dietitian?</label>
+  <br>
+  <input type="checkbox" name="reasons" value="Healthy meal planning"> Healthy meal planning<br>
+  <input type="checkbox" name="reasons" value="Concern about weight gain in college"> Concern about weight gain in college<br>
+  <input type="checkbox" name="reasons" value="Healthy weight loss"> Healthy weight loss<br>
+  <input type="checkbox" name="reasons" value="Healthy weight gain"> Healthy weight gain<br>
+  <input type="checkbox" name="reasons" value="Sports nutrition"> Sports nutrition<br>
+  <input type="checkbox" name="reasons" value="Stress over/under eating"> Stress over/ under eating<br>
+  <input type="checkbox" name="reasons" value="Dining hall over/under eating"> Dining hall over/ under eating<br>
+  <input type="checkbox" name="reasons" value="Hunger management"> Hunger management<br>
+  <input type="checkbox" name="reasons" value="Food allergies or intolerances"> Food allergies or intolerances<br>
+  <input type="checkbox" name="reasons" value="Gastrointestinal disorder (IBS, Colitis)"> Gastrointestinal disorder (IBS, Colitis)<br>
+  <input type="checkbox" name="reasons" value="Vegetarian/vegan"> Vegetarian/vegan<br>
+  Other: <input type="text" name="other_reason" size="30">
+    </div>
+
+
+
+    <!-- <div>
+        <table border="1">
+        <thead>
+    <tr>
+      <th>Food Group</th>
+      <th>Serving Sizes</th>
+      <th>Serving per day</th>
+      <th>Serving per week</th>
+      <th>Never/ rarely</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Refined Grains: white bread, pasta, cereals<br>OR<br>Whole Grains: whole wheat bread, brown rice, quinoa, oatmeal</td>
+      <td>
+        1 Slice bread<br>
+        1 cup cereal<br>
+        1/2 cup cooked rice, pasta or cereal<br>
+        1/2 bagel<br>
+        English muffin
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vegetables</td>
+      <td>
+        1 cup raw leafy vegetable<br>
+        1/2 cup cooked or raw vegetables<br>
+        6oz vegetable juice
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fruits</td>
+      <td>
+        1/2 cup juice<br>
+        medium fruit<br>
+        1/4 cup dried fruit<br>
+        1/2 cup fresh, frozen, or canned fruit
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low Fat dairy<br>OR<br>Whole fat dairy</td>
+      <td>
+        8 oz. milk<br>
+        1 cup yogurt<br>
+        1 oz. cheese or 1 slice
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lean meats, poultry, fish<br>OR<br>High fat meats, sausage, cold cuts, bacon, ribs</td>
+      <td>3 oz.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nuts, seeds, dry beans</td>
+      <td>
+        1/4 cup nuts<br>
+        2 tbsp. seeds<br>
+        1/2 cup cooked dry beans<br>
+        4oz tofu<br>
+        1 cup soy milk<br>
+        2 tbsp. nut butter
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fats and oils</td>
+      <td>
+        1 tbsp. regular dressing<br>
+        2 tbsp. light dressing<br>
+        1 tsp. oil<br>
+        1 tbsp. mayo<br>
+        1 tsp. butter
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sweets</td>
+      <td>
+        1.5 oz. candy (bag of M&amp;Ms)<br>
+        Cookies (2 cookies Oreo size)
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alcohol</td>
+      <td>
+        12 oz. beer<br>
+        5oz wine<br>
+        1 shot spirits
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+        </div> -->
+        
+    <!-- </div> -->
+
+
+
+
+    <br>
+    <div>
+        <p>Please add any additional information you feel may be relevant to understanding your nutritional health (chronic disease, prior
+surgeries, etc.)</p>
+        <textarea name="addinfo" id="addinfo" rows="5" cols="70"></textarea>
+    </div>
+
+
+
+
+    <div>
+        <h3> Meal Plan / Nutritional Log: In your estimate, what are the foods and liquids are you usually taking in a daily basis?</h3>
+        <table border="1" style="width: 700px; color: black;">
+                <tr>
+                    <th style="width: 100px;"></th>
+                    <th style="width: 100px;">Time</th>
+                    <th style="width: 100px;">Breakfast</th>
+                    <th style="width: 100px;">Snack</th>
+                    <th style="width: 100px;">Lunch</th>
+                    <th style="width: 100px;">Snack</th>
+                    <th style="width: 100px;">Dinner</th>
+                </tr>
+                <tr>
+                    <td>Day 1</td>
+                    <td><input type="text" style="border: none; max-height:max-content;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+
+                </tr>
+                 <tr>
+                    <td>Day 2</td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+
+                </tr>
+                 <tr>
+                    <td>Day 3</td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+
+                </tr>
+                 <tr>
+                    <td>Day 4</td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+
+                </tr>
+                 <tr>
+                    <td>Day 5</td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+
+                </tr>
+                 <tr>
+                    <td>Day 6</td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+
+                </tr>
+                 <tr>
+                    <td>Day 7</td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+                    <td><input type="text" style="border: none;" ></td>
+
+                </tr>
+        </table>
+    </div>
+
+
+
+    <div>
+        <p>Please give us your feedback</p>
+        <textarea name="feedback" id="feedback" cols="50" rows="7"></textarea>
+    </div>
+    <br>
+    <div><Label></Label></div>
+    <input type="submit" value="Submit">
+</form>
+ 
+
+
+<footer>
+    <p>
+        <strong>Privacy Policy:</strong> We value your privacy. The personal information you provide in this diet analysis form will be used solely for the purpose of analyzing your dietary habits and nutritional needs. Your data will not be shared with third parties without your consent and will be securely stored according to applicable data protection laws.
+    </p>
+    
+</footer>
+</body>
+</html>
